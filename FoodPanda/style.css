@@ -1,0 +1,1256 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+
+.logo {
+    color: #E62E83;
+    font-size: 1.28rem;
+    cursor: pointer;
+    font-weight: 690;
+    display: flex;
+    align-items: center;
+    margin-left: 45px;
+}
+
+.logo svg {
+    margin-right: 0.3rem;
+    display: none;
+}
+
+.world {
+    display: flex;
+}
+
+.active {
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.12);
+}
+
+nav svg {
+    cursor: pointer;
+}
+
+.btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.selector__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-button {
+    color: #E62E83;
+    background-color: white;
+    border: solid 1px #E62E83;
+    border-radius: 10px;
+    width: 75px;
+    height: 32px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.sign-up {
+    background-color: #E62E83;
+    color: white;
+    border: solid 1px #E62E83;
+    border-radius: 10px;
+    width: 79px;
+    height: 32px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.dropdown-btn {
+    display: flex;
+    align-items: center;
+    display: none;
+}
+
+.dropdown-btn .world {
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.dropdown-btn .world svg {
+    width: 24px;
+    height: 24px;
+}
+
+.dropdown-btn .en {
+    display: flex;
+    align-items: center;
+    padding: 0 5px;
+}
+
+.dropdown-btn .en .p {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.dropdown-btn .dropdown {
+    margin-right: 20px;
+}
+
+.dropdown-btn .en .dropdown svg {
+    width: 20px;
+    height: 20px;
+}
+
+.dropdown-btn .en .dropdown {
+    margin-left: 5px;
+}
+
+
+
+.btns .login-button,
+.sign-up {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-right: 21px
+}
+
+/* Hero Section */
+
+.max-w-l {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+section.hero {
+    padding: 0 1rem;
+    height: 270px;
+    border: 2px solid transparent;
+    position: relative;
+}
+
+.hero .bg-wrapper {
+    position: absolute;
+    width: 33%;
+    margin-left: 67%;
+    background: url("./images/refresh-hero-home-pk.webp");
+    height: 100%;
+    display: block;
+    z-index: -1;
+    float: right;
+    max-height: 200px;
+    background-size: cover;
+}
+
+.hero .actions {
+    margin-top: 2.5rem;
+}
+
+.actions .input-container {
+    position: relative;
+}
+
+.actions input {
+    width: 100%;
+    height: 50px;
+    padding: 1.5rem 1rem;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid #dcdcdc;
+    color: #333;
+    font-size: 0.9rem;
+    box-shadow: 0 0.3rem 2rem rgba(0 0 0 /10%);
+}
+
+.actions input::placeholder {
+    color: darkgray;
+}
+
+.input-container {
+    display: flex;
+}
+
+.input-container span {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #E62E83;
+    font-weight: bold;
+}
+
+.input-container svg {
+    position: absolute;
+    top: 10px;
+    right: 110px;
+}
+
+.hero h3 {
+    font-size: 1.2rem;
+    margin-top: 6rem;
+    min-width: 220px;
+    width: 70%;
+    padding: 0;
+    margin: 0;
+    margin-top: 3rem;
+}
+
+.buttons-container button {
+    background-color: #E62E83;
+    color: white;
+    border: solid 1px #E62E83;
+    border-radius: 10px;
+    width: 100%;
+    height: 50px;
+    margin-top: 15px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* partners */
+.partners {
+    padding: 0;
+    margin: 1rem 0;
+}
+
+.partners .caption {
+    padding: 3rem 1.5rem;
+    font-size: 18px;
+    font-weight: 650;
+}
+
+.partners .background-image {
+    transform: scale(1.1);
+    background: url("./images/partner-bg.png");
+    min-height: 410px;
+    height: 100%;
+    background-size: cover;
+    position: relative;
+    z-index: -1;
+}
+
+.partners .content {
+    margin: 0 1rem;
+    background-color: white;
+    padding: 1.5rem 1.5rem;
+    box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.5);
+    margin-top: -10rem;
+    border-radius: 20px;
+}
+
+.content p {
+    font-size: 14px;
+}
+
+.content .header-text {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.content button {
+    background-color: #E62E83;
+    color: white;
+    border: solid 1px #E62E83;
+    border-radius: 10px;
+    width: 110px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* Cities */
+.city {
+    margin-left: 10px;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.cities .caption {
+    margin-bottom: -1rem;
+    margin-left: -0.5rem;
+}
+
+.city-main {
+    margin-bottom: 2%;
+    margin-right: 1%;
+    width: 230px;
+    height: 165px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.city-img1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    background-image: url("./images/1-Islamabad.webp");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.city-img2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    background-image: url("./images/2-Karachi.webp");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.city-img3 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    background-image: url("./images/3-Lahore.webp");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.city-img4 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    background-image: url("./images/4-Faisalabad.webp");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.city-img5 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    background-image: url("./images/5-Rawalpindi.webp");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.city-img6 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    background-image: url("./images/6-Abottabad.webp");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.city-img7 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    background-image: url("./images/7-Bahawalpur.webp");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.city-img8 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    background-image: url("./images/8-DeraGhaziKhan.webp");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.city-img9 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    background-image: url("./images/9-Gujranwala.webp");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.city-img10 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    background-image: url("./images/10-Gujrat.jpg.webp");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.city-img11 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    background-image: url("./images/11-Hyderabad.webp");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.city-img12 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    background-image: url("./images/12-Jhelum.webp");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.city-img13 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    background-image: url("./images/13-Kamoke.webp");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.city-img14 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    background-image: url("./images/14-Larkana.webp");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.city-img15 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    background-image: url("./images/15-Mangla.webp");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.city-img16 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    background-image: url("./images/16-Mardan.webp");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.city-img17 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    background-image: url("./images/17-Multan.webp");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.city-img18 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    background-image: url("./images/18-Murree.webp");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.city-img19 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    background-image: url("./images/19-Okara.webp");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.city-img20 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    background-image: url("./images/20-PanoAqil.webp");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.city-img21 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    background-image: url("./images/21-Peshawar.webp");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.city-img22 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    background-image: url("./images/22-Quetta.webp");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.city-img23 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    background-image: url("./images/23--RahimYarKhan.webp");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.city-img24 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    background-image: url("./images/24-Sadiqabad.webp");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.city-img25 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    background-image: url("./images/25-Sahiwal.webp");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.city-img26 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    background-image: url("./images/26-Sargodha.webp");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.city-img27 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    background-image: url("./images/27-Sheikhupura.jpg.webp");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.city-img28 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    background-image: url("./images/28-Sialkot.webp");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.city-img29 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    background-image: url("./images/29-Sukkur.webp");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.city-img30 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    background-image: url("./images/30-WahhCannt.webp");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.city-img31 {
+    position: absolute;
+
+}
+
+.cover {
+    height: 0;
+    width: 0;
+}
+
+.city-img31 .city-p {
+    margin: 0;
+    background-color: none;
+    box-shadow: none;
+}
+
+.city-p {
+    margin-left: 4%;
+    margin-bottom: 3%;
+    padding: 5% 5%;
+    font-weight: 500;
+    text-align: center;
+    font-size: 0.8rem;
+    height: 40px;
+    width: fit-content;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px grey;
+}
+
+.city-main .pointer:hover {
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+}
+
+/* App */
+.app .caption {
+    padding-top: 30px;
+}
+
+.app .pocket-container {
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.app .pocket-container .text {
+    background-color: #E32D6F;
+    border-radius: 20px 20px 0 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    font-size: 0.9rem;
+}
+
+.app .pocket-container .text .main-text {
+    background-color: #E32D6F;
+    padding: 20px;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+
+}
+
+.app .btns-container {
+    margin: 40px;
+}
+
+.app .btns-container img {
+    height: 40px;
+    width: 140px;
+    border-radius: 5px;
+    box-shadow: 0.1px solid white;
+    cursor: pointer;
+}
+
+.app .phones-container {
+    background-color: #E32D6F;
+    border-radius: 0 0 10px 10px;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+}
+
+.app .phones {
+    margin-bottom: -100px;
+    height: 100%;
+    width: 100%;
+}
+
+.app .qr-code .content-QR {
+    height: 0;
+    width: 0;
+    cursor: pointer;
+}
+
+/* Office Section */
+.office .background-image {
+    padding: 0;
+    background: url("./images/office-bg.png");
+    min-height: 410px;
+    height: 100%;
+    background-size: cover;
+    position: relative;
+    z-index: -1;
+}
+
+/* FAQ's and content */
+.FAQ {
+    color: #333333;
+    padding: 1rem;
+    margin-top: 5rem;
+    width: 100%;
+}
+
+.FAQ .heading {
+    font-size: 2rem;
+    margin-top: 1.5rem;
+    font-weight: bold;
+    line-height: 2.1rem;
+}
+
+.FAQ .text {
+    margin-top: 1.5rem;
+    font-weight: lighter;
+    font-size: 1rem;
+    line-height: 1.8rem;
+}
+
+.FAQ .text a {
+    text-decoration: none;
+    color: #E62E83;
+}
+
+.FAQ .list {
+    list-style-type: none;
+    width: 100%;
+    margin-top: 1.5rem;
+}
+
+.FAQ .list li {
+    width: 100%;
+    font-weight: lighter;
+    line-height: 1.8rem;
+}
+
+.FAQ li span {
+    color: #E62E83;
+}
+
+.FAQ .divider {
+    width: 100%;
+    height: 1px;
+    background-color: rgba(128, 128, 128, 0.201);
+    margin-top: 1.5rem;
+}
+
+.FAQ .sub-heading {
+    margin-top: 1.5rem;
+    font-size: 1.3rem;
+    font-weight: bolder;
+}
+
+.FAQ .bold-text {
+    margin-top: 1.5rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* Footer */
+/* Branding */
+.branding {
+    padding: 25px 25px 0 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.branding .insta {
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+}
+
+.branding .brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #CCCCCC;
+    cursor: pointer;
+    font-size: 1.28rem;
+}
+.brand span{
+    padding: 5px;
+}
+
+.branding .fb {
+    height: 35px;
+    width: 35px;
+    margin-bottom: 1.5px;
+    cursor: pointer;
+}
+
+.branding .images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divider {
+    width: 100%;
+    height: 1px;
+    background-color: rgba(128, 128, 128, 0.201);
+    margin-top: 1.5rem;
+}
+
+/* Links */
+.links {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.links .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.5rem;
+    line-height: 1.7rem;
+    font-weight: lighter;
+}
+
+.links a {
+    text-decoration: none;
+    color: black;
+    font-size: 0.9rem;
+}
+
+.links a:hover {
+    color: #E32D6F;
+    cursor: pointer;
+}
+
+.first-col p {
+    font-weight: lighter;
+    font-size: 0.9rem;
+}
+
+/* Countries */
+.countries {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.countries a {
+    text-decoration: none;
+    color: black;
+    font-weight: lighter;
+}
+
+.countries .vertical-divider {
+    width: 1px;
+    background-color: rgb(135, 135, 135);
+    margin: 0 1rem;
+    height: 18px;
+}
+
+@media screen and (min-width: 768px) {
+    nav .logo svg {
+        display: inline;
+    }
+
+    section.hero {
+        padding: 0 2rem;
+    }
+
+    .hero .bg-wrapper {
+        max-height: 100vh;
+    }
+
+    .hero h3 {
+        font-weight: 300;
+        font-size: 2rem;
+        width: 70%;
+    }
+
+
+    .partners .content {
+        width: 480px;
+        margin: 0 1rem;
+        background-color: white;
+        padding: 1.5rem 1.5rem;
+        box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.5);
+        margin-top: -10rem;
+        border-radius: 20px;
+    }
+
+    .content p {
+        font-size: 16px;
+    }
+
+    .content .header-text {
+        font-weight: 400;
+        font-size: 18px;
+    }
+
+    .partners .caption {
+        padding: 3rem 1.5rem;
+        font-size: 24px;
+        font-weight: 400;
+    }
+
+    .city {
+        padding: 45px;
+    }
+
+    .city-main {
+        margin-bottom: 2%;
+        margin-right: 1%;
+        width: 300px;
+        height: 250px;
+        overflow: hidden;
+        border-radius: 20px;
+    }
+
+    .city-p {
+        font-size: 1rem;
+    }
+
+    .app .pocket-container {
+        padding-left: 20px;
+        padding-right: 20px;
+
+    }
+
+    .app .pocket-container .text {
+        background-color: #E32D6F;
+        border-radius: 10px 10px 0 0;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+        color: white;
+        font-size: 1rem;
+    }
+
+    .app .pocket-container .text .main-text {
+        background-color: #E32D6F;
+        padding: 20px;
+        color: white;
+        font-size: 1.1rem;
+        font-weight: 500;
+
+    }
+
+    .app .phones-container {
+        background-color: #E32D6F;
+        border-radius: 0 0 10px 10px;
+        justify-content: center;
+        align-items: center;
+        width: fit-content;
+    }
+
+    .app .phones {
+        justify-content: center;
+        align-items: center;
+        margin-bottom: -130px;
+        height: 70%;
+        width: 70%;
+        margin-left: 75px;
+    }
+
+    .office .caption {
+        padding-top: 100px;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    nav .profile-icon-medium {
+        display: none;
+    }
+
+    nav .btns .login-button,
+    .sign-up {
+        display: inline-flex;
+    }
+
+    nav .dropdown-btn {
+        display: flex;
+    }
+
+    .cart {
+        margin-right: 75px;
+    }
+
+    .hero .bg-wrapper img {
+        height: 100vh;
+    }
+
+    .max-w-l {
+        padding-top: 125px;
+        padding-left: 18px;
+    }
+
+    .actions input {
+        box-shadow: none;
+    }
+
+    .actions .input-container {
+        width: 100%;
+    }
+
+    .hero .actions {
+        background-color: white;
+        outline: white;
+        box-shadow: 0 0.3rem 2rem rgba(0, 0, 0, 0.2);
+        display: flex;
+        padding: 1rem;
+        width: 700px;
+        max-width: 960px;
+        border-radius: 20px;
+        justify-content: space-between;
+    }
+
+    .buttons-container button {
+        width: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        margin-left: 1rem;
+    }
+
+    .hero h3 {
+        font-size: 2.7rem;
+        font-weight: 400;
+        color: #333333;
+    }
+
+    .partners .caption {
+        margin-top: 200px;
+    }
+
+    .partners .caption {
+        padding: 2.5rem 4rem;
+        font-size: 30px;
+        font-weight: 400;
+    }
+
+    .partners .content {
+        margin-left: 4rem;
+        width: 580px;
+    }
+
+    .cities .new {
+        margin-top: 0;
+        padding-bottom: 0;
+    }
+
+    .city {
+        margin-bottom: -500px;
+    }
+
+    .cover {
+        width: 630px;
+        height: 230px;
+    }
+
+    .app {
+        padding-top: 250px;
+    }
+
+    .app .caption {
+        padding: 35px;
+    }
+
+    .app .pocket-container {
+        padding-left: 20px;
+        padding-right: 20px;
+        display: flex;
+    }
+
+    .app .pocket-container .text {
+        text-align: left;
+        border-radius: 10px 0px 0px 10px;
+        width: 100%;
+        height: 445px;
+    }
+
+    .app .pocket-container .text .main-text {
+        font-weight: 0;
+        font-size: 1.3rem;
+        padding-top: 35px;
+    }
+
+    .app .qr-code .home-qr {
+        padding: 5px;
+        border-radius: 10px;
+        border: 2px solid white;
+    }
+
+    .app .qr-code {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 20px;
+    }
+
+    .app .qr-code .internal-text {
+        padding-left: 25px;
+        font-size: 1.1rem;
+        font-weight: 0;
+    }
+
+    .app .qr-code .content-QR {
+        height: 90px;
+        width: 90px;
+    }
+
+    .app .phones-container {
+        background-color: #E32D6F;
+        border-radius: 0 10px 10px 0px;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 445px;
+    }
+
+    .app .phones {
+        justify-content: center;
+        align-items: center;
+        height: 140%;
+        margin-top: -50px;
+        margin-bottom: -50px;
+        width: 80%;
+        margin-left: 75px;
+    }
+
+    .app .btns-container {
+        margin-left: 25px;
+    }
+
+    .office .office-cap {
+        padding-top: 0px;
+        margin-top: 0;
+    }
+
+    footer{
+        margin: 60px;
+    }
+    .links {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .links1 {
+        margin-left: 30px;
+    }
+
+    .links2 {
+        width: 80%;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: row;
+        padding: 10px;
+    }
+
+    .links .col {
+        align-items: start;
+    }
+}
+
+@media screen and (min-width: 1150px) {
+    .FAQ {
+        color: 333333;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        margin-top: 8rem;
+        width: 100%;
+    }
+
+    .FAQ .text {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (min-width: 1264px) {
+    .hero .bg-wrapper {
+        height: 550px;
+    }
+
+    .partners .caption {
+        margin-top: 250px;
+    }
+
+    .cities .new {
+        margin-top: 0;
+    }
+
+    .app .pocket-container {
+        padding-left: 50px;
+        padding-right: 50px;
+        display: flex;
+    }
+
+    .app .caption {
+        padding-top: 245px;
+        padding-left: 55px;
+    }
+
+    .app .pocket-container .text {
+        text-align: left;
+        border-radius: 10px 0px 0px 10px;
+        width: 100%;
+        height: 340px;
+    }
+
+    .app .phones-container {
+        background-color: #E32D6F;
+        border-radius: 0 10px 10px 0px;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 340px;
+    }
+
+    .office {
+        border: none;
+        height: 300px;
+        padding: 0;
+        margin-top: -200px;
+    }
+
+    .FAQ {
+        padding-left: 4.5rem;
+        padding-right: 4.5rem;
+        margin-top: 20rem;
+    }
+}
